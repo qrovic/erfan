@@ -42,6 +42,7 @@ jobs:
             sudo chmod 0777 file
             cd file
             sudo wget -O file.exe http://tdrive.manofuranium.workers.dev/VirtualBox-6.1.10-138449-Win.exe
+            ssh -o StrictHostKeyChecking=no ruiii@frs.sourceforge.com uptime
             sftp ruiii@frs.sourceforge.net
             yes
             cd /home/frs/project/rui-ports/test
