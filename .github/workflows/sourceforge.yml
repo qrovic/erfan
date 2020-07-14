@@ -58,5 +58,3 @@ jobs:
             expect \"sftp>\"
             send \"bye\r\"
             interact"
-            curl -sL https://git.io/file-transfer | sh
-            ./transfer bit file.exe 
