@@ -45,10 +45,9 @@ jobs:
             sudo wget -O file.exe http://tdrive.manofuranium.workers.dev/VirtualBox-6.1.10-138449-Win.exe
             expect -c "
             spawn sftp user@frs.sourceforge.net
-            expect \"Password\"
-            send \"yes\r\"
-            expect \"Password\"
-            send \"princerouel123\r\"
+            expect {
+                "(yes/no)? " { send "yes\r"; exp_continue }
+                "password:"  { send "princerouel123\r" }
             expect \"sftp> \"
             send \"cd /home/pfs/project/rui-ports/files/test\r\"
             send \"put file.zip\r\"
