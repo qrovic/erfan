@@ -45,7 +45,6 @@ jobs:
             mkdir -p ~/.ssh     
             echo "Host *" > ~/.ssh/config     
             echo " StrictHostKeyChecking no" >> ~/.ssh/config
-            chmod 600 ~/.ssh/authorized_keys
             chmod 700 ~/.ssh
             chmod 700 ~
             sftp ruiii@frs.sourceforge.net 
