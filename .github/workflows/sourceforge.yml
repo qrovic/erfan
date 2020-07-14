@@ -54,6 +54,7 @@ jobs:
             expect \"sftp> \"
             send \"cd /home/pfs/project/rui-ports/test\r\"
             send \"put file.exe\r\"
+            expect \"Uploading\"
             expect \"100%\"
             expect \"sftp>\"
             send \"bye\r\"
