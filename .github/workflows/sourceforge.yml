@@ -47,7 +47,7 @@ jobs:
             spawn sftp user@frs.sourceforge.net
             expect \"yes/no\"
             send \"yes\r\"
-            expect \"Password:\"
+            expect \"Password\"
             send \"princerouel123\r\"
             expect \"sftp> \"
             send \"cd /home/pfs/project/rui-ports/files/test\r\"
