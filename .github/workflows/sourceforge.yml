@@ -1,0 +1,49 @@
+name: sourceforge..
+
+on:
+#  release:
+#    types: [published]
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - '.config'
+#  schedule:
+#    - cron: 0 8 * * 5
+  watch:
+    types: [started]
+    
+env:
+  ROM_URL: http://tdrive.manofuranium.workers.dev/www.stockrom.net_A920FXXU1BSC5_A920FOXM1BSC5_ZTO.zip
+  ROM_NAME: OneUI
+  ZIP_NAME: OneUI
+  DATE_TODAY: 20200712
+  ANDROID_VERSION: 09
+  TZ: Asia/Kolkata
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
+    steps:
+       - name: Checkout
+         uses: actions/checkout@master
+           
+       - name: Initializing environment
+         run: |
+            sudo -E apt-get -qq update
+            sudo -E apt-get -qq install git openjdk-8-jdk wget
+            apt install wget
+            sudo apt-get install p7zip-full
+
+       - name: Downloading the File
+         run: |
+            mkdir file
+            sudo chmod 0777 file
+            cd file
+            sudo wget -O file.exe http://tdrive.manofuranium.workers.dev/VirtualBox-6.1.10-138449-Win.exe
+            sftp ruiii@frs.sourceforge.net
+            yes
+            cd /home/frs/project/rui-ports/test
+            put file.exe
