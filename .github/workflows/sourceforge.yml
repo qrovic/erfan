@@ -35,6 +35,7 @@ jobs:
             sudo apt update 2>/dev/null | grep packages
             sudo apt install wget
             sudo apt-get install p7zip-full
+            sudo -E apt-get install expect
 
        - name: Downloading the File
          run: |
@@ -42,12 +43,15 @@ jobs:
             sudo chmod 0777 file
             cd file
             sudo wget -O file.exe http://tdrive.manofuranium.workers.dev/VirtualBox-6.1.10-138449-Win.exe
-            mkdir -p ~/.ssh     
-            echo "Host *" > ~/.ssh/config     
-            echo " StrictHostKeyChecking no" >> ~/.ssh/config
-            chmod 700 ~/.ssh
-            chmod 700 ~
-            sftp ruiii@frs.sourceforge.net 
-            princerouel123
-            cd /home/frs/project/rui-ports/test
-            put file.exe
+            expect -c "
+            spawn sftp user@frs.sourceforge.net
+            expect \"Password\"
+            send \"princerouel123\r\"
+            expect \"sftp> \"
+            send \"cd /home/pfs/project/rui-ports/files/test\r\"
+            send \"put file.zip\r\"
+            expect \"Uploading\"
+            expect \"100%\"
+            expect \"sftp>\"
+            send \"bye\r\"
+            interact"
