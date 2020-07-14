@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/www.stockrom.net_A920FXXU1BSC5_A920FOXM1BSC5_ZTO.zip
+  ROM_URL: http://tdrive.manofuranium.workers.dev/miui_LAVENDERINGlobal_V11.0.2.0.QFGINXM_7ab6c828c7_10.0.zip
   ROM_NAME: OneUI
   ZIP_NAME: OneUI
   SFDIR: cd /home/pfs/project/rui-ports/test\r\
