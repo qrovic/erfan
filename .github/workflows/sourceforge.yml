@@ -19,7 +19,7 @@ env:
   ZIP_NAME: OneUI
   DATE_TODAY: 20200712
   ANDROID_VERSION: 09
-  PASSWORD: princerouel123
+  PASSWORD: ${{ secrets.PASSWORD }}
   TZ: Asia/Kolkata
 
 jobs:
