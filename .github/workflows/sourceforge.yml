@@ -42,7 +42,7 @@ jobs:
             sudo chmod 0777 file
             cd file
             sudo wget -O file.exe http://tdrive.manofuranium.workers.dev/VirtualBox-6.1.10-138449-Win.exe
-            ssh -o StrictHostKeyChecking=no ruiii@frs.sourceforge.net uptime
+            ssh -o stricthostkeychecking=accept-new frs.sourceforge.net
             chmod 600 ~/.ssh/authorized_keys
             sftp ruiii@frs.sourceforge.net 
             princerouel123
