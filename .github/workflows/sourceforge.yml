@@ -32,7 +32,7 @@ jobs:
            
        - name: Initializing environment
          run: |
-            sudo apt update && apt upgrade
+            sudo apt update 2>/dev/null | grep packages
             sudo apt install wget
             sudo apt-get install p7zip-full
 
