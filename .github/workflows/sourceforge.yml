@@ -17,7 +17,7 @@ env:
   ROM_URL: http://tdrive.manofuranium.workers.dev/miui_LAVENDERINGlobal_V11.0.2.0.QFGINXM_7ab6c828c7_10.0.zip
   ROM_NAME: OneUI
   ZIP_NAME: OneUI
-  SFDIR: cd /home/pfs/project/rui-ports/test\r\
+  SFDIR: cd /home/pfs/project/rui-ports/test
   DATE_TODAY: 20200712
   ANDROID_VERSION: 09
   PASSWORD: ${{ secrets.PASSWORD }}
