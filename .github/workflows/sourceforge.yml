@@ -64,12 +64,9 @@ jobs:
             expect \"Uploading\"
             expect \"100%\"
             expect \"sftp>\"
-            send \"bye\r\"
             interact"
             expect -c "
             spawn sftp ruiii@frs.sourceforge.net
-            expect \"yes/no\"
-            send \"yes\r\"
             expect \"Password\"
             send \"${{ secrets.PASSWORD }}\r\"
             expect \"sftp> \"
