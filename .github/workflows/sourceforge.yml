@@ -62,7 +62,6 @@ jobs:
             set timeout -1
             send \"put file.zip\r\"
             expect \"Uploading\"
-            expect \"100%\"
             expect \"sftp>\"
             send \"$SFDIRAB\r\"
             send \"put file.zip\r\"
