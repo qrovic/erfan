@@ -60,7 +60,7 @@ jobs:
             expect \"sftp> \"
             send \"$SFDIRA\r\"
             set timeout -1
-            send \"put VOS3.0_KamateraEdition_YSL.zip\r\"
+            send \"put VOS*.zip\r\"
             expect \"Uploading\"
             expect \"100%\"
             expect \"sftp>\"
