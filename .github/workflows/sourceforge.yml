@@ -14,10 +14,10 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/miui_LAVENDERINGlobal_V11.0.2.0.QFGINXM_7ab6c828c7_10.0.zip
+  ROM_URL: http://tdrive.manofuranium.workers.dev/romdaw.zip
   ROM_NAME: OneUI
   ZIP_NAME: OneUI
-  SFDIRA: cd /home/pfs/project/rui-ports/test
+  SFDIRA: cd /home/pfs/project/rui-ports/ysl
   SFDIRAB: cd /home/pfs/project/rui-ports/test2
   DATE_TODAY: 20200712
   ANDROID_VERSION: 09
@@ -46,7 +46,7 @@ jobs:
             sudo chmod 0777 file
             cd file
             sudo aria2c $ROM_URL
-            mv *.zip file.zip
+            mv *.zip VOS3.0_KamateraEdition_YSL.zip
             
        - name: Uploading 
          run: |
@@ -60,7 +60,7 @@ jobs:
             expect \"sftp> \"
             send \"$SFDIRA\r\"
             set timeout -1
-            send \"put file.zip\r\"
+            send \"put VOS3.0_KamateraEdition_YSL.zip\r\"
             expect \"Uploading\"
             expect \"100%\"
             expect \"sftp>\"
