@@ -44,7 +44,8 @@ jobs:
             mkdir file
             sudo chmod 0777 file
             cd file
-            sudo wget -O file.zip $ROM_URL
+            sudo aria2c $ROM_URL
+            mv *.zip file.zip
             
        - name: Uploading 
          run: |
