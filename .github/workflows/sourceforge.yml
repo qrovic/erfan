@@ -65,7 +65,6 @@ jobs:
             expect \"100%\"
             expect \"sftp>\"
             send \"$SFDIRAB\r\"
-            set timeout -1
             send \"put file.zip\r\"
             send \"bye\r\"
             interact"
