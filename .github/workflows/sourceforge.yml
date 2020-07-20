@@ -17,7 +17,8 @@ env:
   ROM_URL: http://tdrive.manofuranium.workers.dev/miui_LAVENDERINGlobal_V11.0.2.0.QFGINXM_7ab6c828c7_10.0.zip
   ROM_NAME: OneUI
   ZIP_NAME: OneUI
-  SFDIR: cd /home/pfs/project/rui-ports/test
+  SFDIRA: cd /home/pfs/project/rui-ports/test
+  SFDIRAB: cd /home/pfs/project/rui-ports/test2
   DATE_TODAY: 20200712
   ANDROID_VERSION: 09
   PASSWORD: ${{ secrets.PASSWORD }}
@@ -57,11 +58,14 @@ jobs:
             expect \"Password\"
             send \"${{ secrets.PASSWORD }}\r\"
             expect \"sftp> \"
-            send \"$SFDIR\r\"
+            send \"$SFDIRA\r\"
             set timeout -1
             send \"put file.zip\r\"
             expect \"Uploading\"
             expect \"100%\"
             expect \"sftp>\"
+            send \"$SFDIRAB\r\"
+            set timeout -1
+            send \"put file.zip\r\"
             send \"bye\r\"
             interact"
