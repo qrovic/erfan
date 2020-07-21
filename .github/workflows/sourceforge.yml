@@ -59,7 +59,7 @@ jobs:
             expect \"sftp> \"
             send \"$SFDIRA\r\"
             set timeout -1
-            send \"put *AB*.7z\r\"
+            send \"put *Aonly*.7z\r\"
             expect \"Uploading\"
             expect \"100%\"
             expect \"sftp>\"
