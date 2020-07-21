@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/OxygenOS-AB-10-20200721-ruigsi.7z
+  ROM_URL: http://tdrive.manofuranium.workers.dev/OxygenOS-Aonly-10-20200721-ruigsi.7z
   ROM_NAME: OneUI
   ZIP_NAME: OneUI
   SFDIRA: cd /home/pfs/project/rui-ports/GSI/OxygenOS
