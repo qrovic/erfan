@@ -17,8 +17,8 @@ env:
   ROM_URL: http://tdrive.manofuranium.workers.dev/OxygenOS-Aonly-10-20200721-ruigsi.7z
   ROM_NAME: OneUI
   ZIP_NAME: OneUI
-  SFDIRA: cd /home/pfs/project/rui-ports/YSL
-  SFDIRAB: cd /home/pfs/project/rui-ports/test2
+  SFDIRA: cd /home/pfs/project/rui-ports/GSI/OxygenOS
+  SFDIRAB: cd /home/pfs/project/rui-ports/GSI/OxygenOS
   DATE_TODAY: 20200712
   ANDROID_VERSION: 09
   PASSWORD: ${{ secrets.PASSWORD }}
