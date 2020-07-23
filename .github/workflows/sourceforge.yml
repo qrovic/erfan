@@ -14,11 +14,12 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/OxygenOS-Aonly-10-20200721-ruigsi.7z
+  ROM_URL: http://tdrive.manofuranium.workers.dev/Pixel-Aonly-10-20200723-ruigsi.7z
+  ROM_URL: http://tdrive.manofuranium.workers.dev/Pixel-AB-10-20200723-ruigsi.7z
   ROM_NAME: OneUI
   ZIP_NAME: OneUI
-  SFDIRA: cd /home/pfs/project/rui-ports/GSI/OxygenOS
-  SFDIRAB: cd /home/pfs/project/rui-ports/GSI/OxygenOS
+  SFDIRA: cd /home/pfs/project/rui-ports/GSI/R
+  SFDIRAB: cd /home/pfs/project/rui-ports/GSI/R
   DATE_TODAY: 20200712
   ANDROID_VERSION: 09
   PASSWORD: ${{ secrets.PASSWORD }}
@@ -46,6 +47,7 @@ jobs:
             sudo chmod 0777 file
             cd file
             sudo aria2c $ROM_URL
+            sudo aria2c $ROM_URL2
             
        - name: Uploading 
          run: |
@@ -71,7 +73,7 @@ jobs:
             expect \"sftp> \"
             send \"$SFDIRAB\r\"
             set timeout -1
-            send \"put file.zip\r\"
+            send \"put *AB*.7z\r\"
             expect \"Uploading\"
             expect \"100%\"
             expect \"sftp>\"
