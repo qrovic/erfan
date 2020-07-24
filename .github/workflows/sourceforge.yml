@@ -47,7 +47,6 @@ jobs:
             sudo chmod 0777 file
             cd file
             sudo aria2c $ROM_URL
-            sudo aria2c $ROM_URL2
             
        - name: Uploading 
          run: |
