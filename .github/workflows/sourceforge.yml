@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://bitsend.jp/files/678a3f301971ae3d4ef9907a0124a81a.7z
-  ROM_URL2: https://bitsend.jp/files/ee22231fa881b2df3392e6680cf29289.7z
+  ROM_URL: http://tdrive.manofuranium.workers.dev/OxygenOS-Aonly-10-20200724-ruigsi.7z
+  ROM_URL2: http://tdrive.manofuranium.workers.dev/OxygenOS-AB-10-20200724-ruigsi.7z
   ROM_NAME: OneUI
   ZIP_NAME: OneUI
   SFDIRA: cd /home/pfs/project/rui-ports/GSI/OxygenOS
@@ -46,8 +46,6 @@ jobs:
             mkdir file
             sudo chmod 0777 file
             cd file
-            sudo aria2c $ROM_URL
-            sudo aria2c $ROM_URL2
             sudo aria2c $ROM_URL
             sudo aria2c $ROM_URL2
             
