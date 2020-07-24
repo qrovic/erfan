@@ -14,12 +14,12 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/romdaw.zip
-  ROM_URL2: http://tdrive.manofuranium.workers.dev/Pixel-AB-10-20200NNN721-ruigsi.7z
+  ROM_URL: https://bitsend.jp/files/678a3f301971ae3d4ef9907a0124a81a.7z
+  ROM_URL2: https://bitsend.jp/files/ee22231fa881b2df3392e6680cf29289.7z
   ROM_NAME: OneUI
   ZIP_NAME: OneUI
-  SFDIRA: cd /home/pfs/project/rui-ports/YSL
-  SFDIRAB: cd /home/pfs/project/rui-ports/GSI/R
+  SFDIRA: cd /home/pfs/project/rui-ports/GSI/OxygenOS
+  SFDIRAB: cd /home/pfs/project/rui-ports/GSI/OxygenOS
   DATE_TODAY: 20200712
   ANDROID_VERSION: 09
   PASSWORD: ${{ secrets.PASSWORD }}
