@@ -14,13 +14,13 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/OxygenOS-NordV2-Aonly-10-20200724-ruigsi.7z
-  ROM_URL2: http://tdrive.manofuranium.workers.dev/OxygenOS-NordV2-AB-10-20200724-ruigsi.7z
+  ROM_URL: http://tdrive.manofuranium.workers.dev/HydrogenOS-AB-10-20200726-ruigsi.7z
+  ROM_URL2: http://tdrive.manofuranium.workers.dev/HydrogenOS-Aonly-10-20200726-ruigsi.7z
   ROM_NAME: OneUI
   ZIP_NAME: OneUI
   SFDIRA: cd /home/pfs/project/rui-ports/GSI/OxygenOS
   SFDIRAB: cd /home/pfs/project/rui-ports/GSI/OxygenOS
-  DATE_TODAY: 20200712
+  DATE_TODAY: 202007
   ANDROID_VERSION: 09
   PASSWORD: ${{ secrets.PASSWORD }}
   TZ: Asia/Kolkata
