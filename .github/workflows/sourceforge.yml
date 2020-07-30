@@ -16,10 +16,10 @@ on:
 env:
   ROM_URL: http://tdrive.manofuranium.workers.dev/OxygenOS-OnePlus8-Aonly-10-20200730-ruigsi.7z
   ROM_URL2: http://tdrive.manofuranium.workers.dev/OxygenOS-OnePlus8-AB-10-20200730-ruigsi.7z
-  ROM_NAME: Nubia
-  ZIP_NAME: Nubia
-  SFDIRA: cd /home/pfs/project/rui-ports/GSI/Nubia
-  SFDIRAB: cd /home/pfs/project/rui-ports/GSI/Nubia
+  ROM_NAME: OxygenOS
+  ZIP_NAME: OxyenOS
+  SFDIRA: cd /home/pfs/project/rui-ports/GSI/OxygenOS
+  SFDIRAB: cd /home/pfs/project/rui-ports/GSI/OxygenOS
   DATE_TODAY: 202007
   ANDROID_VERSION: 09
   PASSWORD: ${{ secrets.PASSWORD }}
