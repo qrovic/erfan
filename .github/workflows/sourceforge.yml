@@ -14,12 +14,12 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/HydrogenOS-AB-10-20200726-ruigsi.7z
-  ROM_URL2: http://tdrive.manofuranium.workers.dev/HydrogenOS-Aonly-10-20200726-ruigsi.7z
-  ROM_NAME: OneUI
-  ZIP_NAME: OneUI
-  SFDIRA: cd /home/pfs/project/rui-ports/GSI/OxygenOS
-  SFDIRAB: cd /home/pfs/project/rui-ports/GSI/OxygenOS
+  ROM_URL: http://tdrive.manofuranium.workers.dev/OxygenOS-OnePlus8-Aonly-10-20200730-ruigsi.7z
+  ROM_URL2: http://tdrive.manofuranium.workers.dev/OxygenOS-OnePlus8-AB-10-20200730-ruigsi.7z
+  ROM_NAME: Nubia
+  ZIP_NAME: Nubia
+  SFDIRA: cd /home/pfs/project/rui-ports/GSI/Nubia
+  SFDIRAB: cd /home/pfs/project/rui-ports/GSI/Nubia
   DATE_TODAY: 202007
   ANDROID_VERSION: 09
   PASSWORD: ${{ secrets.PASSWORD }}
