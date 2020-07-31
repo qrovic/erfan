@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://tdrive.manofuranium.workers.dev/OxygenOS-OnePlus8-Aonly-10-20200730-ruigsi.7z
-  ROM_URL2: http://tdrive.manofuranium.workers.dev/OxygenOS-OnePlus8-AB-10-20200730-ruigsi.7z
+  ROM_URL: http://tdrive.manofuranium.workers.dev/HydrogenOS-OP7TPro-Aonly-10-20200731-ruigsi.7z
+  ROM_URL2: http://tdrive.manofuranium.workers.dev/HydrogenOS-OP7TPro-AB-10-20200731-ruigsi.7z
   ROM_NAME: OxygenOS
   ZIP_NAME: OxyenOS
   SFDIRA: cd /home/pfs/project/rui-ports/GSI/OxygenOS
